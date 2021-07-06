@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Section 1 */
+        section{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #097792;
+            
+        }
+        /* Form section */
+        form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 75vh;
+            width: 35vw;
+            border-radius: 10px;
+            background-color: white;
+        }
+        section form .mail,section form .password,section form .button{
+            display: flex;
+            justify-content: center;
+            margin: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+        }
+        section form p{
+            display: flex;
+            justify-content: center;
+            margin: 5px 0 5px 0;
+        }
+
+        h1{
+            color: grey;
+            font-size: 30px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        /* Input label font and box style */
+        #e-mail,#pass{
+            display: flex;
+            height: 10vh;
+            width: 25vw;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            border: 0.5px solid rgba(128, 128, 128, 0.274);
+            padding: 0 0 0 30px;
+        }
+        /* Check-box Style */
+        #show-pass{
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+        }
+       input[type="checkbox"]{
+            zoom: 1.2;
+           
+       }
+        .check{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            right: 9vw;
+        }
+        #btn{
+            height: 7vh;
+            width: 27vw;
+            color: white;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #097792;
+        }
+        #forget{
+            padding: 0 5px 0 0;
+        }
+        a{
+            display: flex;
+        }
+        #forget a,#sign-up a{
+            text-decoration: none;
+            color: #097792;
+            font-weight: bold;
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;
+            text-indent: 1rem;
+        }
+    </style>
+
+<body>
+    <section>
+        
+        <form action="">
+            <h1>Login</h1>
+            <div class="mail">
+                <label for="e-mail">Email
+                    <input type="text" id="e-mail" name="mail" placeholder="Enter email">
+                </label>
+            </div>
+            <div class="password">
+                <label for="pass">Password
+                    <input type="password" id="pass" name="pass" placeholder="Enter Password">
+                </label>
+            </div>
+            <div class="check">
+                <label id="show-pass">
+                    <input type="checkbox" id="checkbox-style" onclick="myFunction()" name="pass"> Show Password
+                </label>
+            </div>
+            <div class="button">
+                <input id="btn" type="submit" value="SIGN IN">
+            </div>
+
+            <p id="forget">Forget
+                 <a href="">  Username / password?</a>
+            </p>
+                <p id="sign-up">Don't have an account?
+                <a href="">Sign up</a>
+            </p>
+        </form>
+    </section>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("pass");
+            if (x.type === "password") {
+                x.type = "text";
+            }
+            else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

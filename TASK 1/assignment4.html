@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment | 4</title>
+</head>
+<style>
+    /* Outer border */
+    body{
+        background-color:  rgba(195, 221, 231, 0.959);
+        margin: -25px 0 0 0;
+        font-weight: bold;
+    }
+
+    /* Header and footer */
+    header,footer{
+        text-align: center;
+        height: 100px;
+        background-color: rgba(126, 169, 187, 0.952);
+    }
+    header p,footer p{
+        padding: 35px 0 0 0;
+        font-size: 25px;
+    }
+
+    /* Section1 */
+    section{
+        display: flex;
+        margin: 10px;
+    }
+    section #article1{
+        width: 70%;
+        height: 300px;
+        background-color: rgba(126, 169, 187, 0.959);
+        margin: 10px;
+    }
+    section #article1 #intro{
+        font-size: 25px;
+        text-align: center;
+        padding: 10% 0 0 0;
+    }
+    section #aside1 { 
+        text-align: center;
+        width: 30%;
+        height: 200px;
+        margin: 10px;
+        background-color: rgba(126, 169, 187, 0.959);
+    }
+    section #aside1 #hero{
+        padding: 15% 0 0 0;
+        font-size: 25px;
+    }
+    section #aside1 #action{
+        margin-top: 105px;
+        padding: 5% 0 0 0;
+        font-size: 25px;
+        height: 55px;
+        background-color:rgba(167, 255, 2, 0.884);
+    }
+
+
+    /* Section 2 */
+    section #article2{
+        width: 100%;
+        height: 200px;
+        margin: 10px;
+        background-color: rgba(126, 169, 187, 0.959);
+    }
+    section #article2 #features{
+        padding: 60px 0 0 0;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    /* Section 3 */
+    .section3{
+        display: flex-end;
+    }
+    section #article3{
+        width: 70%;
+        height: 100px;
+        margin: 10px;
+        text-align: center;
+        font-size: 25px;
+        background-color: rgba(126, 169, 187, 0.959);
+    }
+    section #article3 #copy{
+        padding: 15px 0 0 0;
+    }
+    section #aside2{
+        width: 30%;
+        height: 100px;
+        margin: 10px;
+        text-align: center;
+        font-size: 25px;
+        background-color: rgba(167, 255, 2, 0.884);
+    }
+    section #aside2 #action2{
+        padding: 10px 0 0 0;
+    }
+  
+</style>
+<body>
+    <!-- Header -->
+    <header>
+       <p>Header</p> 
+    </header>
+
+    <!-- Section 1 -->
+    <section>
+        <article id="article1">
+            <p id="intro">Intro Copy</p>
+        </article>
+        <aside id="aside1">
+            <p id="hero">Hero Image</p>
+            <p id="action">Call to action</p>
+        </aside>
+    </section> 
+    
+    <!-- Section 2 -->
+   <section class="section2">
+       <article id="article2">
+           <p id="features">Features</p>
+       </article>
+   </section>
+
+   <!-- Section 3 -->
+   <section class="section3">
+        <article id="article3">
+            <p id="copy">More copy</p>
+        </article>
+        <aside id="aside2">
+            <p id="action2">Call to action</p>
+        </aside>
+   </section>
+
+   <!-- Footer -->
+    <footer id="footer">
+        <p>Footer</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #C8C6D2;
+        background: -webkit-linear-gradient(top left, #C8C6D2, #030103);
+        background: -moz-linear-gradient(top left, #C8C6D2, #030103);
+        background: linear-gradient(to bottom right, #C8C6D2, #030103)
+    }
+    /* Profile picture section */
+    section{
+        height: 70vh;
+        width: 23vw;
+        background-color: rgb(255, 255, 255);
+    }
+   
+    section #profile-pic{
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    section div #pp{
+        width: 10vw;
+        height: 20vh;
+        border-radius: 50%;
+    }
+
+    section #info{
+        margin: 20px;
+        height: 27vh;
+        position: relative;
+        bottom: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        /* font-weight: bold; */
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 28px;
+        background: #6629CF;
+        background: -webkit-linear-gradient(to right, #6629CF 31%, #FF1FC3 65%, #AB1DCF 72%);
+        background: -moz-linear-gradient(to right, #6629CF 31%, #FF1FC3 65%, #AB1DCF 72%);
+        background: linear-gradient(to right, #6629CF 31%, #FF1FC3 65%, #AB1DCF 72%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h4{
+        position: relative;
+        top: 1vh;
+        font-family: 'Rajdhani', sans-serif;
+    }
+    p{
+        text-align: center;
+        font-size: 17px;
+        font-family: 'Rajdhani', sans-serif;
+        position: relative;
+        top: 4vh;
+        width: 18vw;
+    }
+
+    section #foot{
+        display: flex;
+        height: 12.5vh;
+        width: 23vw;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #facebook:hover{
+        box-shadow: 5px 5px 25px #0c3fda;
+    }
+    #insta:hover{
+        box-shadow: 5px 5px 25px #F77737;
+    }
+    #github:hover{
+        box-shadow: 5px 5px 25px black
+    }
+    #whatsapp:hover{
+        box-shadow: 5px 5px 25px #25D366 ;
+    }
+</style>
+<body>
+    <section>
+        <div id="profile-pic">
+            <img id="pp" src="C:\Users\sudhir\Desktop\VS CODE FILES\.vscode\MyWorkPlace\img\pic.jpeg" alt="">
+        </div>
+        <div id="info">
+            <h2>Subramaniya sudhir</h2>
+            <h4>Web Designer</h4>
+            <p>
+                Skilled on creative UI,HTML5,CSS3,Semantic Web,Responsive Layout,Web Standrads Compliance.
+                Performance optimization,Cross Device Troubleshooting.
+            </p>
+        </div>
+        <footer id="foot">
+            <div> 
+                <a href="https://touch.facebook.com/?_rdr" target="_blank">
+                    <img id="facebook" src="C:\Users\sudhir\Desktop\VS CODE FILES\.vscode\MyWorkPlace\img\facebook.png"  alt="1"> 
+                </a>
+            </div>
+            <div>
+                <a href="https://instagram.com/dum.code?utm_medium=copy_link" target="_blank">
+                    <img id="insta" src="C:\Users\sudhir\Desktop\VS CODE FILES\.vscode\MyWorkPlace\img\instagram.png" alt="2"> 
+                </a>
+            </div>
+            <div> 
+                <a href="https://github.com/Sudhirrr0706?tab=repositories" target="_blank">
+                    <img id="github" src="C:\Users\sudhir\Desktop\VS CODE FILES\.vscode\MyWorkPlace\img\github.png" alt="3"> 
+                </a>
+                
+            </div>
+            <div> 
+                <a href="https://wa.link/zn1dwx" target="_blank">
+                    <img id="whatsapp" src="C:\Users\sudhir\Desktop\VS CODE FILES\.vscode\MyWorkPlace\img\whatsapp.png" alt="4">
+                </a>
+             </div>
+        </footer>
+    </section>
+</body>
+</html>

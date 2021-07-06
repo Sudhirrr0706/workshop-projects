@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    /* Header Navigation bar */
+    header{
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+    }
+    header nav{
+        height: 10vh;
+        display: flex;
+        background-color: rgb(35, 39, 38);
+    }
+    header nav #left-nav{
+        height: 10vh;
+        width: 6vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header nav #right-nav{
+        display: flex;
+        width: 94vw;
+        /* flex-wrap: wrap; */
+        justify-content: flex-end;
+        align-items: center;
+    }
+    header nav #right-nav li{
+        display: flex;
+        margin: 19px;
+        list-style: none;
+    }
+    header nav #left-nav li{
+       list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Section */
+    section #home-page,section #about-page,section #services-page,section #download-page,section #contact-page{
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 50px;
+       font-weight: bold;
+       font-family: 'Roboto', sans-serif;
+   }
+   section #home-page{
+       background-color: rgb(145, 11, 116);
+   }
+   section #about-page{
+       background-color: rgb(13, 102, 236);
+   }
+   section #services-page{
+       background-color: rgb(238, 59, 14);
+   }
+   section #download-page{
+       background-color: #0f4c5c
+   }
+   section #contact-page{
+       background-color: rgb(247, 23, 23);
+   }
+ 
+   a:hover {
+       border-bottom:3px solid rgb(189, 189, 60) ;
+       border-radius: 10px;
+   }
+
+    
+</style>
+<body>
+    <header>
+        <nav>
+            <ul id="left-nav">
+                <li id="logo">
+                    <img src="C:\Users\sudhir\Desktop\VS CODE FILES\.vscode\MyWorkPlace\img\home.png" alt="Home">
+                </li>
+            </ul>
+            <ul id="right-nav">
+                <li>
+                    <a href="#home-page">Home</a>
+                </li>
+                <li>
+                    <a href="#about-page">About</a>
+                </li>
+                <li>
+                    <a href="#services-page">Services</a>
+                </li>
+                <li>
+                    <a href="#download-page">Downloads</a>
+                </li>
+                <li>
+                    <a href="#contact-page">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div id="home-page">
+            <p>Home</p>
+        </div>
+        <div id="about-page">
+            <p>About</p>
+        </div>
+        <div id="services-page">
+            <p>Services</p>
+        </div>
+        <div id="download-page">
+            <p>Downloads</p>
+        </div>
+        <div id="contact-page">
+            <p>Contacts</p>
+        </div>
+    </section>
+</body>
+</html>
